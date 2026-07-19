@@ -16,7 +16,7 @@ AI Prompt Generator adalah website untuk membantu membuat prompt AI yang lebih b
 - index.html → Website structure
 - style.css → Design & theme
 - script.js → Main logic
-- favicon.png → Website icon
+- apg.png → Website icon
 
 ## 🚀 Usage
 
