@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Prompt Generator</title>
+    <link rel="icon" type="image/png" href="apg.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🤖 AI Prompt Generator</h1>
+        <p>Buat prompt AI lebih detail dan profesional</p>
+    </header>
+
+    <main>
+
+        <section class="generator-box">
+
+            <label for="idea">
+                💡 Jelaskan ide kamu
+            </label>
+
+            <textarea 
+                id="idea" 
+                placeholder="Contoh: Buat website toko online modern..."
+            ></textarea>
+
+
+            <label for="ai">
+                🤖 Pilih AI
+            </label>
+
+            <select id="ai">
+                <option value="ChatGPT">ChatGPT</option>
+                <option value="Claude">Claude</option>
+                <option value="Gemini">Gemini</option>
+                <option value="Midjourney">Midjourney</option>
+                <option value="Stable Diffusion">Stable Diffusion</option>
+            </select>
+
+
+            <label for="type">
+                📝 Tipe Prompt
+            </label>
+
+            <select id="type">
+                <option value="Coding">Coding</option>
+                <option value="Image">Image Generation</option>
+                <option value="Writing">Writing</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Learning">Learning</option>
+                <option value="Business">Business</option>
+            </select>
+
+
+            <div class="buttons">
+                <button onclick="generatePrompt()">
+                    ⚡ Generate Prompt
+                </button>
+
+                <button onclick="improvePrompt()">
+                    🚀 Improve Prompt
+                </button>
+            </div>
+
+
+            <label>
+                📄 Hasil Prompt
+            </label>
+
+            <textarea 
+                id="result"
+                placeholder="Prompt akan muncul di sini..."
+                readonly
+            ></textarea>
+
+
+            <button class="copy-btn" onclick="copyPrompt()">
+                📋 Copy Prompt
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>AI Prompt Generator © 2026</p>
+    </footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
